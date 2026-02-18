@@ -12,6 +12,9 @@ class Solution(object):
         :type target: str
         :rtype: str
         """
-        
+        for l in letters:
+            if ord(l) > ord(target):
+                return l
+        return letters[0]
 # @lc code=end
 

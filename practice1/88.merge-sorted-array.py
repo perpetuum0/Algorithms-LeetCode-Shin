@@ -14,6 +14,15 @@ class Solution(object):
         :type n: int
         :rtype: None Do not return anything, modify nums1 in-place instead.
         """
-        
+
+        s=m
+        for x in nums2:
+            j=s-1
+            while j>=0 and nums1[j]>x:
+                
+                nums1[j+1]=nums1[j]
+                j-=1
+            nums1[j+1]=x
+            s+=1
 # @lc code=end
 
